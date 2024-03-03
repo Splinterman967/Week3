@@ -7,14 +7,13 @@ using TMPro;
 public class HelloWorld : MonoBehaviour
 {
 
-    [SerializeField] GameObject text;
-    public string textString = "Heloooo!";
-    private float speed = 10f;
+    
+  
+    public float speed = 10f;
 
     // Start is called before the first frame update
     void Start()
     {
-        text.GetComponent<TextMeshPro>().text = textString;
     }
 
     // Update is called once per frame
@@ -25,6 +24,6 @@ public class HelloWorld : MonoBehaviour
 
     void Move()
     {
-        transform.Translate(new Vector3(0, 0.5f, 1) * Time.deltaTime * speed);
+        transform.Translate(new Vector3(0, 0, 5) * Time.deltaTime * speed);
     }
 }
